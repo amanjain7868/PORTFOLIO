@@ -14,5 +14,5 @@ OWL.CAROUSEL
 TYPED.JS
 
 
-FOR WORKING PROJECT VISIT:---
+FOR WORKING PROJECT VISIT: https://portfolio-intractive-resume.vercel.app
 
