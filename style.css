@@ -172,16 +172,23 @@ section .title::before{
 
 
 /* home Styling      ----->      start */
+.socialinteraction{
+    background: crimson;
+    height:100px;
+}
 
-.home .social{
-    width: 250px;
-    padding-top: 180px;
+.social{
+    height: 10px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 }
-.home .social .card1 a{
-    color:white;
+.social .card1 a{
+    color:#111;
+}
+.social .card1 .box{
+    align-content: center;
 }
 /* .home .social i:hover{
     transform: translateX(20px);
