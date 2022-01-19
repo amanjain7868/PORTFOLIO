@@ -173,7 +173,7 @@ section .title::before{
 
 /* home Styling      ----->      start */
 .socialinteraction{
-    background: crimson;
+    background: #111;
     height:100px;
 }
 
@@ -185,7 +185,7 @@ section .title::before{
     flex-direction: row;
 }
 .social .card1 a{
-    color:#111;
+    color:whitesmoke;
 }
 .social .card1 .box{
     align-content: center;
