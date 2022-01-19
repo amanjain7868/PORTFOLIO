@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+ html{
+     scroll-behavior:smooth ;
+ }
+
+
+/* navbar styling      ----->      start */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+
+}
+
+.navbar{
+    /* background: crimson; */
+    position: fixed;
+    width: 100%;
+    font-family:'ubuntu',sans-serif;
+    padding: 30px 0;
+    transition:all 0.3s ease ;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.navbar .logo a{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.navbar .logo a span{
+    color: crimson;
+}
+
+.navbar.sticky .logo a span{
+    color:#fff;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease ;
+
+
+}
+
+.navbar .menu li a:hover{
+    color: crimson;
+
+}
+/* navbar styling      ----->      end */
+
+
+/* scroll up button start*/
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+   z-index: 9999;
+     font-size: 30px;
+     border-radius: 6px;
+     border-bottom-width: 2px;
+     cursor: pointer;
+     opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease; 
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+/* scroll up button e nd*/
+
+/* menu btn styling start*/
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor:pointer;
+    display: none;
+}
+/* menu btn styling end */
+
+
+/* all styling code  start */
+section{
+    padding:100px 0;
+}
+section{
+    font-family: 'Poppins',sans-serif;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-family: 'ubuntu',sans-serif;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+section .title::after{
+    position: absolute;
+    bottom:-11px;
+    left:50%;
+    padding: 5px;
+    font-size: 10px;
+    color:crimson;
+    background: #fff;
+    transform: translateX(-50%);
+    
+}
+
+section .title::before{
+    content:"";
+    position: absolute;
+    width:180px;
+    left:50%;
+    height:3px;
+    background: #111;
+    bottom:0px;
+    transform:translate(-50%);
+}
+
+.about, .project ,.skill , .achievement{
+    font-family: 'Poppins',sans-serif ;
+}
+/* all styling code  end */
+
+
+
+
+
+/* home Styling      ----->      start */
+
+.home .social{
+    width: 250px;
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.home .social .card1 a{
+    color:white;
+}
+/* .home .social i:hover{
+    transform: translateX(20px);
+
+} */
+.home{
+    display:flex;
+    background:url("pics/banner.jpg") no-repeat center;
+    height:100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu',sans-serif;
+}
+
+.home .homecontent{
+    padding-top: 150px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .homecontent .use{
+    display: inline-block;
+    background: crimson;   
+    color:#fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px ;
+    border-radius: 20px;
+    border: 5px solid crimson;
+    transition: all 0.5s ease-in-out;
+
+} 
+
+.home .homecontent .use:hover{
+    color: #fff;
+    background: none;
+} 
+
+.home .homecontent .text-1{
+    font-size: 27px;
+}
+
+.home .homecontent .text-2{
+    font-size: 75px;
+    font-weight:  600;
+    margin-left: -3px;
+
+}
+
+.home .homecontent .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .homecontent .text-3 span{
+    color:crimson;
+    font-weight: 500;
+}
+/* home Styling      ----->      end */
+
+/* about section start */
+.about .title::after{
+    content: "who i am";
+    font-size: 40%;
+    font-weight: bolder;
+}
+
+.about .about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width:45%;
+
+}
+.left img{
+    height:400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+.about .about-content .right{
+    width:55%;
+}
+
+.about .about-content .right .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.about .about-content .right .text span{
+    color: crimson;
+
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+/* about section end  */
+
+
+/* project section start */
+
+.project .title::after{
+    background: #111;
+    content: "what i did";
+    font-size: 45%;
+    font-weight: bolder;
+    bottom:-13px;
+}
+
+.project .title::before{
+    background: #fff;
+    content: "what i did";
+    font-size: 40%;
+    font-weight: bolder;
+    
+}
+
+.project .project-content  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project{
+    color: #fff;
+    background: #111;
+}
+
+.project .project-content .card{
+    width:calc(33% - 20px);
+    background:#222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+}
+
+.project .project-content .card i{
+    font-size: 50px;
+    color:crimson
+}
+
+.project .project-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:10px 0 7px;
+    
+
+}
+
+.project .project-content .card .box{
+    transition: all 0.6s ease-in;
+}
+
+.project .project-content .card:hover .box{
+    transform: scale(1.08);
+
+}
+
+.project .project-content .card:hover {
+    background: crimson;
+}
+
+.project .project-content .card{
+    margin-bottom: 20px;
+}
+
+.project .project-content .card i{
+    transition: color 0.6s ease-in;
+}
+
+.project .project-content .card:hover i{
+    color: #fff;
+
+}
+
+/* project section end */
+
+
+
+/* skills section styling start */
+.skill .title::after{
+    background: #fff;
+    content: "what i know";
+    font-size: 45%;
+    font-weight: bolder;
+    bottom:-13px;
+}
+
+.skill .title::before{
+    background: #111;
+    content: "what i did";
+    font-size: 40%;
+    font-weight: bolder;
+}
+
+.skill .skill-content  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill{
+    color: #111;
+    background: #fff;
+}
+
+.skill .skill-content .card{
+    width:calc(33% - 20px);
+    background:#fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.skill .skill-content .card img{
+    font-size: 50px;
+}
+
+.skill .skill-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:10px 0 7px;
+    
+
+}
+
+.skill .skill-content .card:hover {
+    background: #fff;
+    border-radius: 900px ;
+    color: #111;
+}
+
+
+.skill .skill-content .l:hover .box{
+    transform: scale(1.08);
+}
+
+.skill .skill-content .f:hover .box{
+    transform: scale(1.08);
+}
+
+.skill .skill-content .b:hover .box{
+    transform: scale(1.08);
+}
+
+.skill .skill-content .card .f:hover::after {
+    background: #fff;
+    content: "frontend";
+    font-size: 35px;
+    font-weight: bolder;
+    bottom:-13px;
+    
+}
+
+.skill .skill-content .card .b:hover::after {
+    background: #fff;
+    content: "backend";
+    font-size: 35px;
+    font-weight: bolder;
+    bottom:-13px;
+    
+}
+
+.skill .skill-content .card .l:hover::after {
+    background: #fff;
+    content: "language";
+    font-size: 35px;
+    font-weight: bolder;
+    bottom:-13px;
+    
+}
+
+.skill .skill-content .card{
+    margin-bottom: 20px;
+}
+
+.skill .skill-content .card img{
+    transition: color 0.1s ease-in;
+}
+
+.skill .skill-content  .card:hover img{
+    color: #fff;
+
+}
+
+
+.skill img{
+    width:auto;
+    height:80px;
+}
+
+.skill .text{
+    font-weight: bolder;
+}
+
+.skill .card{
+    border-style: solid;
+    border-radius: 90px;
+}
+/* skills section styling end */
+
+/* achievement start */
+.achievement .title::after{
+    background: #111;
+    content: "what i attained";
+    font-size: 45%;
+    font-weight: bolder;
+    bottom:-13px;
+}
+
+.achievement .title::before{
+    background: #fff;
+    content: "what i did";
+    font-size: 40%;
+    font-weight: bolder;
+    
+}
+
+.achievement{
+    color: #fff;
+    background: #111;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.achievement .carousel .card{
+    height:400;
+    width: 600;
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.achievement .carousel .card:hover{
+    background: crimson;
+}
+.achievement .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.achievement .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.achievement .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.achievement .carousel .card img{
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.achievement .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 30%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+/* achievement end */
+
+
+/* contact styling start */
+.contact .title::after{
+    content:"get in touch";
+    font-size: 15px;
+}
+
+.contact{
+    font-family: "Poppins",sans-serif;
+}
+
+.contact .contact-content .column{
+    width:calc(100% - 20px)
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom:10px; 
+}
+
+.contact .contact-content p{
+    text-align: justify; 
+}
+
+.contact .contact-content .icons{
+    margin:10px  0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 70px;
+    align-items: center  ;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+
+}
+.contact .contact-content .row  i{
+    font-size: 25px;
+    color:crimson;
+    
+
+}
+
+.contact .contact-content .row .info .sub-title a{
+    color:#111;
+}
+
+.contact .contact-content .row .info .sub-title a:hover{
+    color:red;
+}
+/* contact styling end*/
+
+/* footer */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* responsive media */
+@media(max-width:1300px){
+    .home .max-width{
+        margin-left: 0px;
+    } 
+}
+
+@media(max-width:1104px){
+    .left img{
+        height:350px;
+        width: 350px;
+    }
+    
+}
+
+@media(max-width:991px){
+    .max-width{
+        padding: 0 50px;
+
+    }
+}
+
+@media(max-width:947px){
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    
+    .menu-btn i.active:before{
+        content:"\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height:100vh;
+        width:100%;
+        left:100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease-in;
+        /* border-bottom-right-radius: 350px; */
+        /* border-bottom-left-radius: 450px; */
+        
+
+
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display:inline-block ;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .homecontent .text-2{
+        font-size: 70px;
+        font-weight:  600;
+        margin-left: -3px;
+    
+    }
+    
+    .home .homecontent .text-3{
+        font-size: 35px;
+        margin: 5px 0;
+    }
+
+    .home .homecontent a{
+        font-size:23px ;
+        padding:10px 30px;
+    }
+
+    .max-width{
+        max-width: 800px;
+    }
+    
+    .about .about-content .column{
+        width:10 0%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;   
+    }
+
+    .about .about-content .right{
+        flex:100%;
+
+
+    }
+
+    .project .project-content .card{
+        width:calc(50% - 10px);
+
+    }
+    .skill .skill-content .card{
+        width:calc(50% - 10px);
+    }
+    .skill .skill-content img{
+        width:auto;
+        height:60px;
+    }
+    
+
+}
+
+@media(max-width:690px){
+    .max-width{
+        padding: 0 23px;
+
+    }
+
+
+    .home .homecontent .text-2{
+        font-size: 60px;
+
+    }
+
+    .home .homecontent .text-3{
+        font-size: 32px;
+    }
+
+    .home .homecontent a{
+        font-size:20px ;
+    }
+    .project .project-content .card{
+        width:calc(100% - 10px);
+    }
+
+    .skill .skill-content .card{
+        width:calc(100% - 10px);
+    }
+    .skill .skill-content img{
+        width:auto;
+        height:40px;
+    }
+}
+
+@media(max-width:500px){
+    
+    .home .homecontent .text-2{
+        font-size: 50px;
+
+    }
+
+    .home .homecontent .text-3{
+        font-size: 27px;
+    }
+
+}
+
